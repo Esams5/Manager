@@ -1,0 +1,11 @@
+/home/esdras/Manager/src/Manager.Infra/bin/Debug/net8.0/Manager.Infra.deps.json
+/home/esdras/Manager/src/Manager.Infra/bin/Debug/net8.0/Manager.Infra.dll
+/home/esdras/Manager/src/Manager.Infra/bin/Debug/net8.0/Manager.Infra.pdb
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.AssemblyInfoInputs.cache
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.AssemblyInfo.cs
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.csproj.CoreCompileInputs.cache
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.dll
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/refint/Manager.Infra.dll
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/Manager.Infra.pdb
+/home/esdras/Manager/src/Manager.Infra/obj/Debug/net8.0/ref/Manager.Infra.dll

@@ -1,0 +1,11 @@
+/home/esdras/Manager/src/Manager.Core/bin/Debug/net8.0/Manager.Core.deps.json
+/home/esdras/Manager/src/Manager.Core/bin/Debug/net8.0/Manager.Core.dll
+/home/esdras/Manager/src/Manager.Core/bin/Debug/net8.0/Manager.Core.pdb
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfoInputs.cache
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfo.cs
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.csproj.CoreCompileInputs.cache
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.dll
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/refint/Manager.Core.dll
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.pdb
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/ref/Manager.Core.dll
