@@ -30,3 +30,4 @@
 /home/esdras/Manager/src/Manager.API/obj/Debug/net8.0/Manager.API.pdb
 /home/esdras/Manager/src/Manager.API/obj/Debug/net8.0/Manager.API.genruntimeconfig.cache
 /home/esdras/Manager/src/Manager.API/obj/Debug/net8.0/ref/Manager.API.dll
+/home/esdras/Manager/src/Manager.API/obj/Debug/net8.0/Manager.API.sourcelink.json
