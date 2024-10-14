@@ -1,3 +1,10 @@
+using System.Linq;
+using Manager.Infra.Context;
+using System.Threading.Tasks;
+using Manager.Domain.Entities;
+using Manager.Infra.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 using Manager.Infra.Interfaces;
 
 namespace Manager.Infra.Repositories
@@ -6,56 +13,38 @@ namespace Manager.Infra.Repositories
     {
         private readonly ManagerContext _context;
 
-        public BaseRepository(ManagerContext context)
+        public UserRepository(ManagerContext context) : base(context)
         {
             _context = context;
             
         }
 
-        public virtual async Task<T> Create(T obj)
+        public async Task<User> GetByEmail(string email)
         {
-            _context.Add(obj);
-            await _context.SaveChangesAsync();
-            
-            return obj;
+            var user = await _context.Users
+                                      .Where(u => u.Email.ToLower() == email.ToLower())
+                                      .AsNoTracking()
+                                      .ToListAsync();
+            return user.FirstOrDefault();
 
         }
 
-        public virtual async Task<T> Update(T obj)
+        public async Task<List<User>> SearchByEmail(string email)
         {
-            _context.Entry(obj).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-
-            return obj;
+            var allUsers = await _context.Users
+                                         .Where(u => u.Email.ToLower().Contains(email.ToLower()))
+                                         .AsNoTracking()
+                                         .ToListAsync();
+            return allUsers;
         }
 
-
-        public virtual async Task Remove(long id)
+        public async Task<List<User>> SearchByFName(string email)
         {
-            var obj = await GetType(id);
-
-            if (obj != null)
-            {
-                _context.Remove(obj);
-                await _context.SaveChangesAsync();
-            }
-        }
-
-        public virtual async Task<T> Get(long id)
-        {
-            var obj = await _context.Set<T>()
-                .AsNoTracking()
-                .Where(u => u.Id == id)
-                .ToListAsync();
-            return obj.FirstOrDefault();
-
-        }
-
-        public virtual async Task<List<T>> Get()
-        {
-            return await _context.Set<T>()
-                .AsNoTracking()
-                .ToListAsync();
+            var allUsers = await _context.Users
+                                .Where(u => u.Name.ToLower().Contains(name.ToLower()))
+                                .AsNoTracking()
+                                .ToListAsync();
+            return allUsers;
         }
     }
 }
