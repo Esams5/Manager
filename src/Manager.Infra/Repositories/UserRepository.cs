@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Manager.Domain.Entities;
-using Manager.Infra.Context;
 using Manager.Infra.Interfaces;
+using Manager.Infra.Context;
+
 
 namespace Manager.Infra.Repositories
 {
@@ -36,7 +37,9 @@ namespace Manager.Infra.Repositories
             return allUsers;
         }
 
-        public async Task<List<User>> SearchByFName(string email)
+       
+
+        public async Task<List<User>> SearchByName(string name)
         {
             var allUsers = await _context.Users
                                 .Where(u => u.Name.ToLower().Contains(name.ToLower()))
