@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Manager.Domain.Entities;
 using Manager.Infra.Interfaces;
 using Manager.Infra.Context;
+using System.Collections.Generic;
 
 namespace Manager.Infra.Repositories
 {
@@ -39,7 +40,7 @@ namespace Manager.Infra.Repositories
 
         public virtual async Task Remove(long id)
         {
-            var obj = await GetType(id);
+            var obj = await Get(id);
 
             if (obj != null)
             {

@@ -1,10 +1,7 @@
-using System.Linq;
-using Manager.Infra.Context;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Manager.Domain.Entities;
-using Manager.Infra.Interfaces;
-using Microsoft.EntityFrameworkCore;
-
+using Manager.Infra.Context;
 using Manager.Infra.Interfaces;
 
 namespace Manager.Infra.Repositories
@@ -12,6 +9,7 @@ namespace Manager.Infra.Repositories
     public class UserRepository : BaseRepository<User>, IUserRepository
     {
         private readonly ManagerContext _context;
+        
 
         public UserRepository(ManagerContext context) : base(context)
         {
