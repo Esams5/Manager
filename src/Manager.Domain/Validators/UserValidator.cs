@@ -25,7 +25,7 @@ namespace Manager.Domain.Validators
 
                 .MinimumLength(3)
                 .MaximumLength(80)
-                .WithMessage("Name must be between 3 and 100 characters");
+                .WithMessage("Name must be between 3 and 80 characters");
 
 
             RuleFor(u => u.Email)
