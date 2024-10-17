@@ -15,7 +15,16 @@ namespace Manager.Infra.Context
         {
             
         }
-
+        
+        private readonly string _connectionString = "Server=localhost;Database=usermanagerapi;Uid=root;Pwd=samuel5723;";
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
+            }
+        }
+            
 
         public virtual DbSet<User> Users { get; set; }
 

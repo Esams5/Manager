@@ -10,3 +10,16 @@
 /home/esdras/Manager/src/Manager.Domain/obj/Debug/net8.0/refint/Manager.Domain.dll
 /home/esdras/Manager/src/Manager.Domain/obj/Debug/net8.0/Manager.Domain.pdb
 /home/esdras/Manager/src/Manager.Domain/obj/Debug/net8.0/ref/Manager.Domain.dll
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\bin\Debug\net8.0\Manager.Domain.deps.json
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\bin\Debug\net8.0\Manager.Domain.dll
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\bin\Debug\net8.0\Manager.Domain.pdb
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.csproj.AssemblyReference.cache
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.AssemblyInfoInputs.cache
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.AssemblyInfo.cs
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.sourcelink.json
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.dll
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\refint\Manager.Domain.dll
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.pdb
+C:\Users\Samuel\Desktop\Manager\src\Manager.Domain\obj\Debug\net8.0\ref\Manager.Domain.dll
