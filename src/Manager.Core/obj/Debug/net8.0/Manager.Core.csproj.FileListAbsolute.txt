@@ -5,6 +5,7 @@
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfoInputs.cache
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfo.cs
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.csproj.CoreCompileInputs.cache
+/home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.sourcelink.json
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.dll
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/refint/Manager.Core.dll
 /home/esdras/Manager/src/Manager.Core/obj/Debug/net8.0/Manager.Core.pdb

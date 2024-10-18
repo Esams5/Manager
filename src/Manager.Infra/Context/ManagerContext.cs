@@ -16,7 +16,7 @@ namespace Manager.Infra.Context
             
         }
         
-        private readonly string _connectionString = "Server=localhost;Database=usermanagerapi;Uid=root;Pwd=samuel5723;";
+        private readonly string _connectionString = "Server=localhost;Database=usermanagerapi;Uid=SamuelEsdras;Pwd=05072003;";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

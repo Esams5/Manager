@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Manager.Infra.Migrations
 {
     [DbContext(typeof(ManagerContext))]
-    [Migration("20241017003228_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20241018163127_UpdateNameLength")]
+    partial class UpdateNameLength
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,8 +40,8 @@ namespace Manager.Infra.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("VARCHAR(80)")
+                        .HasMaxLength(50)
+                        .HasColumnType("VARCHAR(50)")
                         .HasColumnName("name");
 
                     b.Property<string>("Password")

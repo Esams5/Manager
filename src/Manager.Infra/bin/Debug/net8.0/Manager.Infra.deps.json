@@ -553,12 +553,24 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
+      "Manager.Core/1.0.0": {
+        "runtime": {
+          "Manager.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Manager.Domain/1.0.0": {
         "dependencies": {
+          "Manager.Core": "1.0.0",
           "FluentValidation": "11.10.0"
         },
         "runtime": {
-          "Manager.Domain.dll": {}
+          "Manager.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -848,6 +860,11 @@
       "sha512": "sha512-TY8/9+tI0mNaUMgntOxxaq2ndTkdXqLSxvPmas7XEqOlv9lQtB7wLjYGd756lOaO7Dvb5r/WXhluM+0Xe87v5Q==",
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
+    },
+    "Manager.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Manager.Domain/1.0.0": {
       "type": "project",

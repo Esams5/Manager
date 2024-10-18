@@ -14,4 +14,8 @@
     <PackageReference Include="fluentvalidation" Version="11.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Manager.Core\Manager.Core.csproj" />
+  </ItemGroup>
+
 </Project>

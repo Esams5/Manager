@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Manager.Core.Exceptions;
 using Manager.Domain.Validators;
 
 namespace Manager.Domain.Entities
@@ -60,7 +61,7 @@ namespace Manager.Domain.Entities
                     _errors.Add(eror.ErrorMessage);
                 }
 
-                throw new Exception("Validation Failed" + _errors[0]);
+                throw new DomainException("Validation Failed", _errors);
             }
 
             return true;

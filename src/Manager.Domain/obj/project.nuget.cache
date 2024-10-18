@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/sVDA4KjDtnz3bnn0SElGDKUzCIhtb1V/eeQ/Nz8JtWjmptg61lp29DnuiCDO/tSbmIi4+YSAIFfgMpFTsvQwA==",
+  "dgSpecHash": "9i+vDtsWTFg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samuel\\Desktop\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
+  "projectFilePath": "/home/esdras/Manager/src/Manager.Domain/Manager.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Samuel\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512"
+    "/home/esdras/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512"
   ],
   "logs": []
 }

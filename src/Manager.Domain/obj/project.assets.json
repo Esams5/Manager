@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Manager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Manager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Manager.Core.dll": {}
+        }
       }
     }
   },
@@ -42,27 +52,33 @@
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
+    },
+    "Manager.Core/1.0.0": {
+      "type": "project",
+      "path": "../Manager.Core/Manager.Core.csproj",
+      "msbuildProject": "../Manager.Core/Manager.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Manager.Core >= 1.0.0",
       "fluentvalidation >= 11.10.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Samuel\\.nuget\\packages\\": {}
+    "/home/esdras/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
+      "projectUniqueName": "/home/esdras/Manager/src/Manager.Domain/Manager.Domain.csproj",
       "projectName": "Manager.Domain",
-      "projectPath": "C:\\Users\\Samuel\\Desktop\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
-      "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Samuel\\Desktop\\Manager\\src\\Manager.Domain\\obj\\",
+      "projectPath": "/home/esdras/Manager/src/Manager.Domain/Manager.Domain.csproj",
+      "packagesPath": "/home/esdras/.nuget/packages/",
+      "outputPath": "/home/esdras/Manager/src/Manager.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/esdras/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -73,7 +89,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/esdras/Manager/src/Manager.Core/Manager.Core.csproj": {
+              "projectPath": "/home/esdras/Manager/src/Manager.Core/Manager.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -112,7 +132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

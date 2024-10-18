@@ -5,6 +5,7 @@
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfoInputs.cache
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfo.cs
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.csproj.CoreCompileInputs.cache
+/home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.sourcelink.json
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.dll
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/refint/Manager.Services.dll
 /home/esdras/Manager/src/Manager.Services/obj/Debug/net8.0/Manager.Services.pdb
