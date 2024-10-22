@@ -40,7 +40,11 @@ namespace Manager.Domain.Validators
                 .WithMessage("Email must be between 3 and 180 characters")
 
                 .EmailAddress()
-                .WithMessage("Invalid email address");
+                .WithMessage("Invalid email address")
+            
+                .Matches(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+                .WithMessage("Email format is invalid");
+
                 
 
             RuleFor(u => u.Password)
