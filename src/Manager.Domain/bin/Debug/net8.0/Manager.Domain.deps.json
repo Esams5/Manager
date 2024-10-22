@@ -25,10 +25,7 @@
       },
       "Manager.Core/1.0.0": {
         "runtime": {
-          "Manager.Core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Manager.Core.dll": {}
         }
       }
     }

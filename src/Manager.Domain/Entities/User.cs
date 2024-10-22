@@ -1,17 +1,19 @@
-using System;
-using System.Collections.Generic;
 using Manager.Core.Exceptions;
 using Manager.Domain.Validators;
+//using System.Collections.Generic;
 
 namespace Manager.Domain.Entities
 {
     public class User : Base
     {
         //EF
+        #pragma warning disable CS0628
         protected User()
         {
-            
+        
         }
+        
+
         public User(string name, string email, string password)
         {
             Name = name;
