@@ -4,6 +4,7 @@ using Manager.Core.Exceptions;
 using Manager.Services.Interfaces;
 using Manager.Services.DTO;
 using AutoMapper;
+using Manager.API.Utilities;
 
 
 namespace Manager.API.Controllers
@@ -40,11 +41,11 @@ namespace Manager.API.Controllers
             }
             catch (DomainException ex)
             {
-                return BadRequest();
+                return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
             }
             catch (Exception)
             {
-                return StatusCode(500, "Erro");
+                return StatusCode(500, Responses.ApplicationErrorMessage());
             }
         }
         
