@@ -11,6 +11,7 @@ namespace Manager.API.ViewModels
         public string Name { get; set; }
         
         [Required(ErrorMessage = "email is required")]
+        [EmailAddress]
         [MinLength(3, ErrorMessage = "Email must be at least 3 characters")]
         [MaxLength(180, ErrorMessage = "Email must be less than 180 characters")]
         //[RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Invalid email format.")] //Validação básica

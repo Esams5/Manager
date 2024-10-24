@@ -1,12 +1,27 @@
 using Manager.API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Manager.Core.Exceptions;
+using Manager.Services.Interfaces;
+using Manager.Services.DTO;
+using AutoMapper;
+
 
 namespace Manager.API.Controllers
 {
     [ApiController]
     public class UserController : ControllerBase
     {
+        public UserController(IUserService userService, IMapper mappper)
+        {
+            _userService = userService;
+            _mappper = mappper;
+        }
+
+        private readonly IUserService _userService;
+
+        private readonly IMapper _mappper;
+        
+        
         [HttpPost]
         [Route("/api/v1/users/create")]
 
@@ -14,7 +29,14 @@ namespace Manager.API.Controllers
         {
             try
             {
-                return Ok();
+                var userDTO = _mappper.Map<UserDTO>(userViewModel);
+                var userCreated = await _userService.Create(userDTO);
+                return Ok(new ResultViewModel
+                {
+                    Message = "User created",
+                    Success = true,
+                    Data = userCreated
+                });
             }
             catch (DomainException ex)
             {
@@ -27,5 +49,7 @@ namespace Manager.API.Controllers
         }
         
     }
+
+    
 }
 
