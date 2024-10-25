@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kSBKWUjkgGc=",
+  "dgSpecHash": "+lQ8kNM6vEs=",
   "success": true,
   "projectFilePath": "/home/esdras/Manager/src/Manager.Services/Manager.Services.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "/home/esdras/.nuget/packages/microsoft.entityframeworkcore/8.0.10/microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "/home/esdras/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.10/microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",
     "/home/esdras/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.10/microsoft.entityframeworkcore.analyzers.8.0.10.nupkg.sha512",
-    "/home/esdras/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "/home/esdras/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.10/microsoft.entityframeworkcore.relational.8.0.10.nupkg.sha512",
     "/home/esdras/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/esdras/.nuget/packages/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "/home/esdras/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

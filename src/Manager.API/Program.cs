@@ -1,12 +1,14 @@
 using AutoMapper;
 using Manager.API.ViewModels;
 using Manager.Domain.Entities;
+using Manager.Infra.Context;
 using Manager.Infra.Interfaces;
 using Manager.Infra.Repositories;
 using Manager.Services.DTO;
 using Manager.Services.Interfaces;
 using Manager.Services.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,9 +21,12 @@ builder.Services.AddSwaggerGen();
 
 
 
-
+builder.Services.AddSingleton(d => builder.Configuration);
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+
+
 
 AutoMapperDependenceInjection();
 
@@ -29,12 +34,16 @@ void AutoMapperDependenceInjection()
 {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
+        
         cfg.CreateMap<User, UserDTO>().ReverseMap();
         cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
 
     });
     builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 }
+
+
+builder.Services.AddDbContext<ManagerContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 
 var app = builder.Build();

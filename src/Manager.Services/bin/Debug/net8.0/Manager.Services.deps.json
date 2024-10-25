@@ -59,15 +59,15 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.10": {},
-      "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.10": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "8.0.2.0",
-            "fileVersion": "8.0.224.6803"
+            "assemblyVersion": "8.0.10.0",
+            "fileVersion": "8.0.1024.46708"
           }
         }
       },
@@ -184,7 +184,7 @@
       },
       "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
           "MySqlConnector": "2.3.5"
         },
         "runtime": {
@@ -218,6 +218,7 @@
         "dependencies": {
           "Manager.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
         },
         "runtime": {
@@ -270,12 +271,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/8.0.10",
       "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.10.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
+    "Microsoft.EntityFrameworkCore.Relational/8.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NoGfcq2OPw0z8XAPf74YFwGlTKjedWdsIEJqq4SvKcPjcu+B+/XDDNrDRxTvILfz4Ug8POSF49s1jz1JvUqTAg==",
-      "path": "microsoft.entityframeworkcore.relational/8.0.2",
-      "hashPath": "microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512"
+      "sha512": "sha512-OefBEE47kGKPRPV3OT+FAW6o5BFgLk2D9EoeWVy7NbOepzUneayLQxbVE098FfedTyMwxvZQoDD9LrvZc3MadA==",
+      "path": "microsoft.entityframeworkcore.relational/8.0.10",
+      "hashPath": "microsoft.entityframeworkcore.relational.8.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
       "type": "package",
