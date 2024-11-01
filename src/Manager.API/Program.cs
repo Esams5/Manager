@@ -44,6 +44,8 @@ void AutoMapperDependenceInjection()
 }
 
 
+
+
 builder.Services.AddDbContext<ManagerContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))),ServiceLifetime.Transient);
 
 
@@ -57,6 +59,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthorization();
 
 app.UseAuthorization();
 
