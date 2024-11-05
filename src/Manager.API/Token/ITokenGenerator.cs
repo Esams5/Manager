@@ -1,7 +1,7 @@
 namespace Manager.API.Token
 {
-    public class ITokenGenerator
+    public interface ITokenGenerator
     {
-        
+        string GenerateToken();
     }
 }
