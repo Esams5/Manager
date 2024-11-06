@@ -13,15 +13,15 @@ namespace Manager.API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        public UserController(IUserService userService, IMapper mappper)
+        public UserController(IUserService userService, IMapper mapper)
         {
             _userService = userService;
-            _mappper = mappper;
+            _mapper = mapper;
         }
 
         private readonly IUserService _userService;
 
-        private readonly IMapper _mappper;
+        private readonly IMapper _mapper;
         
         
         [HttpPost]
@@ -32,7 +32,7 @@ namespace Manager.API.Controllers
         {
             try
             {
-                var userDTO = _mappper.Map<UserDTO>(userViewModel);
+                var userDTO = _mapper.Map<UserDTO>(userViewModel);
                 var userCreated = await _userService.Create(userDTO);
                 return Ok(new ResultViewModel
                 {
@@ -58,7 +58,7 @@ namespace Manager.API.Controllers
         {
             try
             {
-                var userDto = _mappper.Map<UserDTO>(userViewModel);
+                var userDto = _mapper.Map<UserDTO>(userViewModel);
                 var userUpdated = await _userService.Update(userDto);
                 return Ok(new ResultViewModel
                 {
